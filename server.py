@@ -11,7 +11,10 @@ def db():
 
 def authorized(): return bool(session.get('ok'))
 @app.get('/')
-def home(): return send_from_directory('static','index.html')
+def home(): return send_from_directory('.','index.html')
+
+@app.get('/june.png')
+def june_image(): return send_from_directory('.','june.png')
 @app.get('/api/status')
 def status(): return jsonify(locked=not authorized(),configured=bool(os.getenv('OPENAI_API_KEY')))
 @app.post('/api/login')
