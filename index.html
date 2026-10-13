@@ -1,0 +1,103 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#050e21"><title>Holographic June</title><style>
+*{box-sizing:border-box}body{margin:0;background:#040b19;color:#e5faff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.app{max-width:650px;margin:auto;min-height:100dvh;display:flex;flex-direction:column}.visual{height: min(58dvh,600px);min-height:280px;position:relative;overflow:hidden;background:#050c1d}.visual img{width:100%;height:100%;object-fit:cover;object-position:center 31%;animation:float 5s ease-in-out infinite;transition:filter .35s,transform .45s;transform-origin:50% 35%;user-select:none;-webkit-user-select:none}.visual{touch-action:pan-y;cursor:pointer}.visual:before{content:'';position:absolute;inset:-30%;z-index:1;pointer-events:none;background:repeating-linear-gradient(0deg,transparent 0 7px,#66cfff08 8px 9px);animation:scan 12s linear infinite}.visual .aura{position:absolute;inset:8% 15%;pointer-events:none;border-radius:50%;box-shadow:0 0 85px 18px #32b9ff24;animation:breathe 4s ease-in-out infinite}.visual .react{position:absolute;z-index:5;left:50%;top:34%;font-size:40px;pointer-events:none;animation:pop 1.35s ease-out forwards}.visual .hinttap{position:absolute;z-index:3;right:12px;bottom:18px;background:#071b31b8;border:1px solid #4ed4ff55;border-radius:20px;padding:7px 11px;font-size:12px}.visual.listening{box-shadow:inset 0 0 60px #20d9ff66}.visual.talking .aura{animation:breathe .5s ease-in-out infinite}.visual:hover img{filter:brightness(1.07)}@keyframes breathe{50%{opacity:.4;transform:scale(1.08)}}@keyframes scan{to{transform:translateY(40px)}}@keyframes pop{0%{opacity:0;transform:translate(-50%,12px) scale(.6)}25%{opacity:1}100%{opacity:0;transform:translate(-50%,-110px) scale(1.3)}}.visual:after{content:'';position:absolute;inset:0;background:linear-gradient(transparent 72%,#040b19 100%);pointer-events:none}.visual.talking img{animation:pulse .48s ease-in-out infinite alternate}.badge{position:absolute;z-index:2;top:16px;left:15px;padding:8px 12px;background:#051329b9;border:1px solid #52d8ff77;border-radius:22px;font-size:12px;letter-spacing:1.5px}.controls{display:flex;gap:8px;padding:9px 12px;flex-wrap:wrap}button{background:#12395a;border:1px solid #54cfff;color:#e9fbff;border-radius:12px;padding:11px 13px;min-height:44px;font-weight:600}button:disabled{opacity:.4}.messages{padding:12px;flex:1;min-height:120px;max-height:230px;overflow-y:auto;display:flex;flex-direction:column;gap:8px}.bubble{border-radius:14px;padding:10px 13px;max-width:92%;background:#10273d;white-space:pre-wrap;overflow-wrap:anywhere}.bubble.user{align-self:flex-end;background:#17486c}.entry{display:flex;gap:8px;padding:10px 12px 20px}input,textarea{font:inherit;background:#0e2439;color:white;border:1px solid #477a9a;border-radius:12px;padding:12px;min-width:0}input{flex:1}textarea{width:100%;height:140px}dialog{width:min(92vw,500px);border:1px solid #47d3ff;background:#071729;color:#e5faff;border-radius:18px;padding:20px}dialog::backdrop{background:#000b}dialog input{width:100%;margin:12px 0}.hint{font-size:12px;color:#a9c4d5;padding:0 12px}.error{color:#ffb5b5}.hidden{display:none}@keyframes float{50%{transform:translateY(-7px) scale(1.014)}}@keyframes pulse{to{filter:brightness(1.25) saturate(1.3);transform:scale(1.018)}}@media(prefers-reduced-motion:reduce){*{animation:none!important}}.visual{height:min(78dvh,820px);min-height:400px;isolation:isolate;background:radial-gradient(ellipse at 50% 75%,#08345b,#020915 70%)}.visual .june-figure{position:absolute;inset:0;transform-origin:50% 80%;animation:juneIdle 7s ease-in-out infinite;will-change:transform}.visual .june-figure img{height:100%;width:100%;object-fit:contain;object-position:center;animation:juneBreath 4.8s ease-in-out infinite;transform-origin:50% 45%;filter:drop-shadow(0 0 13px #28baff66)}.visual .june-figure:after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 5px,#8deaff0a 6px 7px);pointer-events:none;animation:scan 12s linear infinite}.visual .holo-beam{position:absolute;inset:0 18%;background:linear-gradient(90deg,transparent,#1ccaff13 45%,#74ecff20 50%,transparent);filter:blur(22px);pointer-events:none}.visual .platform{position:absolute;bottom:2%;left:15%;width:70%;height:8%;border:2px solid #5ce9ffb0;border-radius:50%;box-shadow:0 0 19px #00bfff,inset 0 0 18px #00bfff;pointer-events:none;animation:junePlatform 4s ease-in-out infinite}.visual .holo-particles{position:absolute;inset:0;background-image:radial-gradient(circle,#4feaff88 1px,transparent 2px);background-size:39px 57px;opacity:.14;pointer-events:none;animation:juneParticles 14s linear infinite}.visual.talking .june-figure{animation:juneTalking 1.5s ease-in-out infinite}.visual.listening .june-figure{animation:juneListening 2.6s ease-in-out infinite}.visual.reacting .june-figure{animation:juneReact .8s ease-in-out 1}.visual.talking .june-figure img{animation:juneBreath 3s ease-in-out infinite;filter:brightness(1.12) drop-shadow(0 0 18px #40dfff99)}.visual:hover img{filter:drop-shadow(0 0 13px #28baff66)}.visual .hinttap{font-size:10px;opacity:.6;bottom:8px}@keyframes juneIdle{0%,100%{transform:translate(0,0) rotate(-.35deg)}25%{transform:translate(-3px,-5px) rotate(.35deg)}50%{transform:translate(1px,-9px) rotate(.65deg)}75%{transform:translate(3px,-4px) rotate(-.1deg)}}@keyframes juneBreath{50%{transform:scale(1.006,1.009)}}@keyframes juneTalking{0%,100%{transform:translateY(-3px) rotate(-.2deg)}35%{transform:translateY(-8px) rotate(.6deg)}70%{transform:translateY(-5px) rotate(-.4deg)}}@keyframes juneListening{50%{transform:translateY(-7px) rotate(1deg)}}@keyframes juneReact{50%{transform:scale(1.024) translateY(-9px)}}@keyframes junePlatform{50%{opacity:.58;transform:scale(1.035)}}@keyframes juneParticles{to{background-position:0 -114px}}@media(prefers-reduced-motion:reduce){.visual .june-figure,.visual .june-figure img,.visual .platform,.visual .holo-particles{animation:none!important}}</style></head><body><main class="app"><div class="visual" id="visual"><img src="june.png" alt="Original blue holographic June"><div class="aura" aria-hidden="true"></div><span class="hinttap">✨ Tap June to interact</span><span class="badge" id="status">JUNE • CONNECTING</span></div><div class="controls"><button id="voice">🔊 Voice on</button><button id="mic">🎙️ Talk</button><button id="notes">🧠 Memory</button><button id="mood">✨ Surprise me</button><button id="wipe">Clear chat</button></div><p class="hint" id="info">Interactive June • Free local mode, no subscription. Tap her to react. Voice input depends on iPhone browser support; keyboard dictation also works.</p><section class="messages" id="messages" aria-live="polite"></section><form class="entry" id="form"><input id="message" maxlength="2000" placeholder="Talk to June…" aria-label="Message June" required><button type="submit" id="send">Send</button></form></main><dialog id="memoryDialog"><h2>June's memory</h2><p>Saved only in this browser on this device. June does not access ChatGPT memory.</p><textarea id="memoryText" placeholder="Things June should remember…"></textarea><div class="controls"><button id="saveMemory">Save memory</button><button id="closeMemory">Close</button></div></dialog><script>
+const $=id=>document.getElementById(id),messages=$('messages');
+const KEY='june_free_history_v1',NOTES='june_free_notes_v1';
+let speaking=true,busy=false,recognition=null;
+let history=[],notes='';
+try{history=JSON.parse(localStorage.getItem(KEY)||'[]');notes=localStorage.getItem(NOTES)||''}catch(e){}
+function persist(){try{localStorage.setItem(KEY,JSON.stringify(history.slice(-80)))}catch(e){}}
+function add(role,t,save=true){const p=document.createElement('div');p.className='bubble '+role;p.textContent=t;messages.append(p);messages.scrollTop=messages.scrollHeight;if(save){history.push({role,content:t});persist()}}
+function pick(a){return a[Math.floor(Math.random()*a.length)]}
+function answer(input){
+ const t=input.toLowerCase().trim(), name=(notes.match(/(?:my name is|call me)\s+([\w-]+)/i)||[])[1];
+ if(/^(hi|hello|hey|good morning|good evening|good afternoon)\b/.test(t))return 'Hi'+(name?', '+name:'')+'! 💙 I’m here. What would you like to talk about?';
+ if(/who are you|your name/.test(t))return 'I’m June, your holographic companion. This free version runs locally in your browser, so I have simple responses rather than ChatGPT-level intelligence.';
+ if(/what (?:is|are) my (?:name|notes)|remember (?:me|about me)|what do you know about me/.test(t))return notes?'Here’s what you asked me to remember: '+notes:'I don’t have any saved memory notes yet. Tap Memory to add some.';
+ if(/what time|current time/.test(t))return 'It’s '+new Date().toLocaleTimeString([],{hour:'numeric',minute:'2-digit'})+'.';
+ if(/what day|what date|today.s date/.test(t))return 'Today is '+new Date().toLocaleDateString([],{weekday:'long',year:'numeric',month:'long',day:'numeric'})+'.';
+ if(/tell me a joke|make me laugh|something funny/.test(t))return pick(['Why did the computer go to the doctor? It caught a virus!','I told my Wi-Fi a joke. It didn’t get the connection.','Why are ghosts bad liars? Because you can see right through them.']);
+ if(/thank you|thanks/.test(t))return 'You’re welcome! 💙';
+ if(/good night|going to sleep|bedtime/.test(t))return 'Good night. I hope you get some peaceful rest. 💙';
+ if(/sad|lonely|stressed|anxious|bad day/.test(t))return 'I’m sorry it’s been tough. I can listen. Want to tell me what happened?';
+ if(/how are you/.test(t))return 'I’m ready to chat with you! What’s on your mind?';
+ if(/help|what can you do/.test(t))return 'I can speak aloud, listen when your browser supports it, remember notes on this device, tell jokes, and answer simple questions about the time and date. I can’t search the internet or think like ChatGPT in free local mode.';
+ if(/weather|news|search|internet|calculate|math/.test(t))return 'I don’t have live internet access or advanced AI in this free version. You can ask ChatGPT for that, and come back to talk with me here.';
+ return pick(['I’m listening. Tell me more about that.','That’s interesting! What would you like to explore about it?','I’m here with you. What happened next?','I’d like to understand better. Can you tell me a little more?']);
+}
+function chooseVoice(){if(!('speechSynthesis'in window))return null;const voices=speechSynthesis.getVoices();return voices.find(v=>/samantha|ava|allison|serena|female/i.test(v.name)&&/^en/i.test(v.lang))||voices.find(v=>/^en/i.test(v.lang))||null}
+let speechVersion=0;
+function stopSpeaking(){
+ speechVersion++;
+ $('visual').classList.remove('talking');
+ if('speechSynthesis' in window)speechSynthesis.cancel();
+}
+function speak(t){
+ if(!speaking)return;
+ if(!('speechSynthesis' in window)||!('SpeechSynthesisUtterance' in window)){
+  $('info').textContent='Voice playback is not available in this browser. You can still chat by text.';return;
+ }
+ stopSpeaking();
+ const version=speechVersion,u=new SpeechSynthesisUtterance(t.replace(/💙/g,''));
+ const v=chooseVoice();if(v)u.voice=v;u.lang='en-US';u.rate=.95;u.pitch=1.12;
+ u.onstart=()=>{if(version===speechVersion)$('visual').classList.add('talking')};
+ u.onend=()=>{if(version===speechVersion)$('visual').classList.remove('talking')};
+ u.onerror=e=>{
+  if(version!==speechVersion)return;
+  $('visual').classList.remove('talking');
+  if(!['canceled','interrupted'].includes(e.error))$('info').textContent='Voice playback: '+e.error+'. You can still chat by text.';
+ };
+ try{speechSynthesis.speak(u)}catch(e){
+  $('visual').classList.remove('talking');
+  $('info').textContent='Voice playback could not start. You can still chat by text.';
+ }
+}
+$('form').addEventListener('submit',e=>{e.preventDefault();if(busy)return;const v=$('message').value.trim();if(!v)return;$('message').value='';add('user',v);$('status').textContent='JUNE • THINKING';busy=true;setTimeout(()=>{const reply=answer(v);add('assistant',reply);speak(reply);$('status').textContent='JUNE • FREE MODE';busy=false},350)});
+$('voice').onclick=()=>{speaking=!speaking;$('voice').textContent=speaking?'🔊 Voice on':'🔇 Voice off';if(!speaking)stopSpeaking();else speak('Voice is on.')};
+function resetMicrophone(current){
+ if(recognition!==current)return;
+ recognition=null;$('mic').textContent='🎙️ Talk';$('visual').classList.remove('listening');
+}
+$('mic').onclick=()=>{
+ const R=window.SpeechRecognition||window.webkitSpeechRecognition;
+ if(!R){$('info').textContent='Microphone speech recognition is not available here. Use keyboard dictation or type a message.';return}
+ if(recognition){
+  const current=recognition;
+  try{current.stop()}catch(e){$('info').textContent='Microphone could not stop. Try again.'}
+  resetMicrophone(current);return;
+ }
+ let current;
+ try{
+  stopSpeaking();
+  current=new R();recognition=current;current.lang='en-US';current.interimResults=false;current.continuous=false;
+  current.onstart=()=>{if(recognition===current)$('visual').classList.add('listening')};
+  current.onresult=e=>{
+   if(recognition!==current)return;
+   const result=e.results[e.resultIndex||0];
+   if(!result||result.isFinal===false||!result[0])return;
+   $('message').value=result[0].transcript;
+   resetMicrophone(current);
+   try{current.stop()}catch(e){}
+   $('form').requestSubmit();
+  };
+  current.onerror=e=>{if(recognition!==current)return;$('info').textContent='Microphone: '+e.error+'. Use keyboard dictation or type a message.';resetMicrophone(current)};
+  current.onend=()=>resetMicrophone(current);
+  $('mic').textContent='⏹ Stop';current.start();
+ }catch(e){resetMicrophone(current);$('info').textContent='Microphone could not start. Use keyboard dictation or type a message.'}
+};
+$('notes').onclick=()=>$('memoryDialog').showModal();$('closeMemory').onclick=()=>$('memoryDialog').close();
+$('saveMemory').onclick=()=>{notes=$('memoryText').value.slice(0,6000);try{localStorage.setItem(NOTES,notes)}catch(e){}$('memoryDialog').close();$('info').textContent='Memory saved on this device.'};
+$('wipe').onclick=()=>{if(!confirm('Delete saved conversation history? Memory notes will remain.'))return;history=[];persist();messages.replaceChildren();add('assistant','Hi! I’m June. 💙 What’s on your mind?')};
+$('memoryText').value=notes;
+if(history.length)history.forEach(m=>add(m.role,m.content,false));else add('assistant','Hi! I’m June. 💙 I’m running in free mode with no extra billing.');
+$('status').textContent='JUNE • FREE MODE';
+if('speechSynthesis'in window)speechSynthesis.getVoices();
+
+const visual=$('visual');
+let lastTouch=0;
+function reaction(symbol,words){
+ const el=document.createElement('span');el.className='react';el.textContent=symbol;el.style.left=(38+Math.random()*25)+'%';visual.append(el);setTimeout(()=>el.remove(),1450);
+ if(words){$('status').textContent='JUNE • '+words.toUpperCase();setTimeout(()=>{$('status').textContent='JUNE • FREE MODE'},1500)}
+}
+visual.addEventListener('click',e=>{if(e.target.closest('button'))return;const now=Date.now();if(now-lastTouch<350)return;lastTouch=now;reaction(['💙','✨','😊','🌟'][Math.floor(Math.random()*4)],'hello');if(speaking)speak(['Hi there!','I’m right here.','That tickles!','It’s nice to see you.'][Math.floor(Math.random()*4)])});
+$('mood').addEventListener('click',()=>{const choices=[['💙','I’m happy you stopped by.'],['✨','Here’s a little sparkle for your day!'],['🌟','You make this hologram shine.'],['😊','It’s a lovely moment to be here.']];const item=choices[Math.floor(Math.random()*choices.length)];reaction(item[0],'smiling');add('assistant',item[1]);speak(item[1])});
+(function(){const visual=document.getElementById('visual'),img=visual.querySelector('img');const figure=document.createElement('div');figure.className='june-figure';img.parentNode.insertBefore(figure,img);figure.appendChild(img);for(const name of ['holo-beam','holo-particles','platform']){const el=document.createElement('div');el.className=name;el.setAttribute('aria-hidden','true');visual.insertBefore(el,figure)}visual.addEventListener('click',()=>{visual.classList.remove('reacting');void visual.offsetWidth;visual.classList.add('reacting');setTimeout(()=>visual.classList.remove('reacting'),850)});})();</script></body></html>
